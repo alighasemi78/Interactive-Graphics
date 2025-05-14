@@ -50,8 +50,6 @@ function GetModelViewProjection(
     return mvp;
 }
 
-// [TO-DO] Complete the implementation of the following class.
-
 class MeshDrawer {
     // The constructor is a good place for taking care of the necessary initializations.
     constructor() {
