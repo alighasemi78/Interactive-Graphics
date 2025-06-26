@@ -1,2 +1,3 @@
 # Interactive-Graphics
-Projects of the Interactive Graphics Course
+
+Assignments and the Final Project of the Interactive Graphics Course
