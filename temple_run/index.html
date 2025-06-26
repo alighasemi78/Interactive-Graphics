@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Space Run</title>
+        <link rel="stylesheet" href="/src/style.css" />
+    </head>
+    <body>
+        <div id="score" class="text">Score: 0</div>
+        <div id="bullets">
+            <div class="text">Bullets:</div>
+            <div id="bullet-bar"></div>
+        </div>
+        <div id="jetPack" style="display: none">
+            <div class="text">Jet Pack Fuel:</div>
+            <div id="jetPack-bar">
+                <div id="jetPack-fill"></div>
+            </div>
+        </div>
+        <div id="health">
+            <div class="text">Health:</div>
+            <div id="health-bar">
+                <div id="health-fill"></div>
+            </div>
+        </div>
+        <div id="guide">
+            <p>Use &#8592; and &#8594; to move and &#8593; to jump</p>
+            <p>Press space to shoot</p>
+            <p>Avoid asteroids, laser beams, and gaps</p>
+        </div>
+        <div id="gunReady" class="text">Press space to shoot!</div>
+        <div id="start-screen" class="overlay">
+            <h1>Space Run</h1>
+            <p>Press any key to start</p>
+        </div>
+
+        <div id="game-over-screen" class="overlay" style="display: none">
+            <h1>Game Over</h1>
+            <p id="final-score">Score: 0</p>
+            <p>Press any key to restart</p>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
