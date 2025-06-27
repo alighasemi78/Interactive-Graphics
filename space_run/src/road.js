@@ -81,7 +81,7 @@ export class Road {
         const laserGate = new THREE.Group();
 
         const poleL = new THREE.Mesh(
-            new THREE.BoxGeometry(poleWidth, 1, poleWidth),
+            new THREE.BoxGeometry(poleWidth, poleHeight, poleWidth),
             new THREE.MeshStandardMaterial({
                 color: 0x888888,
             })
@@ -121,13 +121,6 @@ export class Road {
             roughness: 1.0,
         });
         const rock = new THREE.Mesh(geometry, material);
-
-        // Apply random non-uniform scale
-        rock.scale.set(
-            0.8 + Math.random() * 0.4,
-            0.8 + Math.random() * 0.4,
-            0.8 + Math.random() * 0.4
-        );
 
         rock.position.set(0, 0, 0);
 
@@ -184,6 +177,12 @@ export class Road {
 
     createMeteorite(x, z) {
         const asteroid = this.sampleMeteorite.clone();
+        // Apply random non-uniform scale
+        asteroid.scale.set(
+            0.8 + Math.random() * 0.4,
+            0.8 + Math.random() * 0.4,
+            0.8 + Math.random() * 0.4
+        );
         asteroid.position.x = x;
         asteroid.position.z = z;
 

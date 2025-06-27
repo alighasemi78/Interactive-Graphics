@@ -11,7 +11,6 @@ const scene = world.scene;
 const skyTexture = world.skyTexture;
 const camera = world.camera;
 const renderer = world.renderer;
-// const composer = world.composer;
 const controls = world.controls;
 
 const hud = new HUD();
@@ -48,7 +47,6 @@ function animate() {
 
     controls.update();
     renderer.render(scene, camera);
-    // composer.render();
 }
 
 renderer.render(scene, camera);
