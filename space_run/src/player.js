@@ -262,9 +262,6 @@ export class Player {
         this.health--;
         this.updateHealthBar(this.health);
 
-        // Bring monster closer after each hit
-        // monsterOffsetZ = Math.max(monsterOffsetZ - 0.5, 0.5); // minimum distance
-
         // Flash effect
         let flashDuration = 2000; // in ms
         let flashInterval = 200;
@@ -280,7 +277,6 @@ export class Player {
 
         // Check for death
         if (this.health <= 0) {
-            console.log("💀 Monster caught the player!");
             this.endGame();
         }
     }

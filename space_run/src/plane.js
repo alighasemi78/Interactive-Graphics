@@ -231,7 +231,6 @@ export class Plane {
     }
 
     fireBullet() {
-        console.log(this.bullets.length);
         if (this.bullets.length < this.maxBullets) {
             this.audio.gunShotAudio.stop();
             this.audio.gunShotAudio.play();
@@ -279,7 +278,6 @@ export class Plane {
         const time = performance.now() * 0.005; // time in milliseconds → seconds
         const swing = Math.sin(time * 1) * 0.1; // speed and amplitude
 
-        // Arms swing opposite to legs
         this.plane.rotation.x = -swing;
         this.plane.position.y -= swing * 0.1;
 
